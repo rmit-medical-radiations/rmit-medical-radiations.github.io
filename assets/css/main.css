@@ -446,6 +446,142 @@ body {
 
 .back-link a:hover { text-decoration: underline; }
 
+/* ── People page ── */
+.people-group {
+  margin-bottom: 3rem;
+}
+
+.people-group-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rmit-mid);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--rmit-red);
+  margin-bottom: 1.5rem;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.person-card {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--rmit-white);
+  transition: box-shadow 0.2s ease;
+}
+
+.person-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.person-avatar-wrap {
+  flex-shrink: 0;
+}
+
+.person-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rmit-red);
+  color: var(--rmit-white);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.person-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.person-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.person-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rmit-red);
+  margin-bottom: 0.1rem;
+}
+
+.person-dept {
+  font-size: 0.8rem;
+  color: var(--rmit-mid);
+  margin-bottom: 0.5rem;
+}
+
+.person-bio {
+  font-size: 0.85rem;
+  color: var(--rmit-mid);
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.person-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.65rem;
+}
+
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.person-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--rmit-light);
+  color: var(--rmit-mid);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.person-links a:hover {
+  background: var(--rmit-red);
+  color: var(--rmit-white);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ── Site nav (inside dark header) ── */
 .site-nav {
   margin-left: auto;

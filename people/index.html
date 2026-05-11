@@ -1,0 +1,24 @@
+---
+layout: default
+title: People
+---
+
+<section class="page-content">
+  <div class="page-inner">
+    <h1 class="page-title">People</h1>
+
+    {% for group in site.data.people.groups %}
+    {% if group.members and group.members.size > 0 %}
+    <div class="people-group">
+      <h2 class="people-group-heading">{{ group.name }}</h2>
+      <div class="people-grid">
+        {% for person in group.members %}
+        {% include person-card.html person=person %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+  </div>
+</section>
