@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="hero area-hero">
+  <div class="hero-inner">
+    <div class="area-icon">{{ page.icon }}</div>
+    <h2>{{ page.title }}</h2>
+    {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="research-section">
+  <div class="research-section-inner">
+
+    {% assign area_projects = site.projects | where_exp: "proj", "proj.areas contains page.area" %}
+
+    {% if area_projects.size > 0 %}
+    <div class="section-heading">
+      <h3>Research Projects</h3>
+    </div>
+    <div class="project-list">
+      {% for project in area_projects %}
+      {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="placeholder">Projects will appear here soon.</p>
+    {% endif %}
+
+  </div>
+</section>

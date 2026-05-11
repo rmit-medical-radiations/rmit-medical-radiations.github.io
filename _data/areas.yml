@@ -1,0 +1,27 @@
+- slug: medical-imaging
+  title: Medical Imaging
+  icon: 🩻
+  description: >-
+    Developing and evaluating advanced imaging technologies and methods to
+    support accurate diagnosis, treatment planning, and patient management.
+
+- slug: nuclear-medicine
+  title: Nuclear Medicine
+  icon: ⚛️
+  description: >-
+    Investigating diagnostic and therapeutic applications of radionuclides,
+    including novel radiopharmaceuticals and quantitative imaging techniques.
+
+- slug: radiotherapy
+  title: Radiotherapy
+  icon: ☢️
+  description: >-
+    Advancing the precision and efficacy of radiation treatment through
+    improved dosimetry, treatment planning, and adaptive therapy approaches.
+
+- slug: education
+  title: Education
+  icon: 🎓
+  description: >-
+    Driving innovation in medical radiations education through curriculum
+    development, simulation-based learning, and evidence-informed pedagogy.

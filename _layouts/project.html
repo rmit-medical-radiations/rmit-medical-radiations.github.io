@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="page-content">
+  <div class="page-inner">
+
+    <div class="project-header">
+      <div class="project-areas-header">
+        {% for slug in page.areas %}
+        {% assign area_data = site.data.areas | where: "slug", slug | first %}
+        {% if area_data %}
+        <a class="area-tag area-tag-link" href="{{ site.baseurl }}/{{ slug }}/">
+          {{ area_data.icon }} {{ area_data.title }}
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <h1 class="page-title">{{ page.title }}</h1>
+      <div class="project-meta-row">
+        {% if page.lead %}<span class="project-lead">{{ page.lead }}</span>{% endif %}
+        {% if page.status %}
+        <span class="status-badge status-{{ page.status }}">{{ page.status }}</span>
+        {% endif %}
+      </div>
+      {% if page.description %}<p class="project-summary">{{ page.description }}</p>{% endif %}
+    </div>
+
+    <div class="project-body">
+      {{ content }}
+    </div>
+
+    <p class="back-link"><a href="{{ site.baseurl }}/projects/">← All projects</a></p>
+
+  </div>
+</section>

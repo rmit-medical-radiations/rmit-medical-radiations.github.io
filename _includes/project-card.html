@@ -1,0 +1,20 @@
+<a class="project-card" href="{{ include.project.url | relative_url }}">
+  <div class="project-card-main">
+    <h4>{{ include.project.title }}</h4>
+    {% if include.project.lead %}<p class="project-lead">{{ include.project.lead }}</p>{% endif %}
+    {% if include.project.description %}<p>{{ include.project.description }}</p>{% endif %}
+  </div>
+  <div class="project-card-meta">
+    {% if include.project.status %}
+    <span class="status-badge status-{{ include.project.status }}">{{ include.project.status }}</span>
+    {% endif %}
+    <div class="project-areas">
+      {% for slug in include.project.areas %}
+      {% assign area_data = site.data.areas | where: "slug", slug | first %}
+      {% if area_data %}
+      <span class="area-tag">{{ area_data.icon }} {{ area_data.title }}</span>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</a>

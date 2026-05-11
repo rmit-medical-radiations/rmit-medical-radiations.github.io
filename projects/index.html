@@ -1,0 +1,32 @@
+---
+layout: default
+title: All Projects
+---
+
+<section class="page-content">
+  <div class="page-inner">
+    <h1 class="page-title">All Projects</h1>
+
+    {% assign active_projects    = site.projects | where: "status", "active" %}
+    {% assign completed_projects = site.projects | where: "status", "completed" %}
+
+    {% if active_projects.size > 0 %}
+    <h2 class="projects-group-heading">Active</h2>
+    <div class="project-list">
+      {% for project in active_projects %}
+      {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if completed_projects.size > 0 %}
+    <h2 class="projects-group-heading">Completed</h2>
+    <div class="project-list">
+      {% for project in completed_projects %}
+      {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+</section>
