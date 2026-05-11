@@ -13,6 +13,7 @@ layout: default
 <section class="research-section">
   <div class="research-section-inner">
 
+    {% comment %}
     {% assign area_projects = site.projects | where_exp: "proj", "proj.areas contains page.area" %}
 
     {% if area_projects.size > 0 %}
@@ -27,6 +28,7 @@ layout: default
     {% else %}
     <p class="placeholder">Projects will appear here soon.</p>
     {% endif %}
+    {% endcomment %}
 
   </div>
 </section>
