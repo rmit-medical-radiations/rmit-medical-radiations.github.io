@@ -2,72 +2,78 @@ groups:
 
   - name: Principal Investigators
     members:
-      - name: Jane Smith
+      - name: Ricky O'Brien
         role: Professor
         department: Medical Radiations, RMIT University
         areas: [medical-imaging, radiotherapy]
         bio: >-
-          Jane leads the Medical Radiations Research Group with interests in
-          quantitative imaging and AI-assisted treatment planning.
-        email: jane.smith@rmit.edu.au
+          Ricky leads the Medical Radiations Research Group.
+        email: ricky.obrien@rmit.edu.au
         orcid: 0000-0000-0000-0001
-        github: janesmith
+        github: 
         photo:
 
   - name: Research Fellows
     members:
-      - name: Michael Chen
-        role: Senior Research Fellow
+      - name: Daryl Wilding-McBride
+        role: Research Fellow
         department: Medical Radiations, RMIT University
         areas: [radiotherapy, medical-imaging]
         bio: >-
-          Michael's research focuses on deep learning for organ segmentation
+          Daryl's research focuses on deep learning for organ segmentation
           and automated radiotherapy treatment planning.
-        email: michael.chen@rmit.edu.au
+        email: daryl.wilding-mcbride@rmit.edu.au
         orcid: 0000-0000-0000-0002
         photo:
 
-      - name: Priya Nair
+      - name: Wenjuan (Wendy) Xiong
         role: Research Fellow
         department: Medical Radiations, RMIT University
-        areas: [education, medical-imaging]
+        areas: [medical-imaging]
         bio: >-
-          Priya investigates simulation-based pedagogy in medical imaging
-          and the design of evidence-informed curricula.
-        email: priya.nair@rmit.edu.au
+        email: wendy.xiong@rmit.edu.au
         orcid: 0000-0000-0000-0003
         photo:
 
-  - name: PhD Students
-    members:
-      - name: Alex Johnson
-        role: PhD Candidate
+      - name: Xin Zhang
+        role: Research Fellow
         department: Medical Radiations, RMIT University
-        areas: [nuclear-medicine, radiotherapy]
+        areas: [medical-imaging]
         bio: >-
-          Alex is investigating patient-specific dosimetry methods for
-          PSMA-targeted theranostics in metastatic prostate cancer.
-        email: alex.johnson@student.rmit.edu.au
+        email: xin.zhang2@rmit.edu.au
+        orcid: 0000-0000-0000-0003
         photo:
 
-      - name: Sarah Lee
-        role: PhD Candidate
-        department: Medical Radiations, RMIT University
-        areas: [medical-imaging, nuclear-medicine]
-        bio: >-
-          Sarah's thesis examines attenuation correction strategies for
-          simultaneous PET/MR acquisitions.
-        email: sarah.lee@student.rmit.edu.au
-        github: sarahlee-mr
-        photo:
+  # - name: PhD Students
+  #   members:
+  #     - name: Alex Johnson
+  #       role: PhD Candidate
+  #       department: Medical Radiations, RMIT University
+  #       areas: [nuclear-medicine, radiotherapy]
+  #       bio: >-
+  #         Alex is investigating patient-specific dosimetry methods for
+  #         PSMA-targeted theranostics in metastatic prostate cancer.
+  #       email: alex.johnson@student.rmit.edu.au
+  #       photo:
 
-  - name: Alumni
-    members:
-      - name: James Watkins
-        role: "PhD — 2024"
-        department: Now at Austin Health, Melbourne
-        areas: [radiotherapy]
-        bio: >-
-          James completed his doctorate on multi-centre dosimetry audits for
-          external beam radiotherapy.
-        photo:
+  #     - name: Sarah Lee
+  #       role: PhD Candidate
+  #       department: Medical Radiations, RMIT University
+  #       areas: [medical-imaging, nuclear-medicine]
+  #       bio: >-
+  #         Sarah's thesis examines attenuation correction strategies for
+  #         simultaneous PET/MR acquisitions.
+  #       email: sarah.lee@student.rmit.edu.au
+  #       github: sarahlee-mr
+  #       photo:
+
+  # - name: Alumni
+  #   members:
+  #     - name: James Watkins
+  #       role: "PhD — 2024"
+  #       department: Now at Austin Health, Melbourne
+  #       areas: [radiotherapy]
+  #       bio: >-
+  #         James completed his doctorate on multi-centre dosimetry audits for
+  #         external beam radiotherapy.
+  #       photo:
