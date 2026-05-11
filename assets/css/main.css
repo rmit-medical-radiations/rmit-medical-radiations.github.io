@@ -464,80 +464,81 @@ body {
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
+/* Portrait card */
 .person-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 1.5rem 1.5rem;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--rmit-white);
+  overflow: hidden;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .person-card:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .person-avatar-wrap {
-  margin-bottom: 1rem;
+  background: var(--rmit-light);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem 1.25rem;
 }
 
 .person-avatar {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--border);
+  border: 3px solid var(--rmit-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .person-avatar-placeholder {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--rmit-red);
   color: var(--rmit-white);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.person-details {
+  padding: 1.1rem 1.25rem 1.25rem;
+  text-align: center;
 }
 
 .person-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
   line-height: 1.3;
+  margin-bottom: 0.2rem;
 }
 
 .person-role {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--rmit-red);
-  margin-bottom: 0.15rem;
-}
-
-.person-dept {
-  font-size: 0.78rem;
-  color: var(--rmit-mid);
   margin-bottom: 0.75rem;
-  line-height: 1.4;
 }
 
 .person-bio {
-  font-size: 0.83rem;
+  font-size: 0.82rem;
   color: var(--rmit-mid);
-  margin-bottom: 0.75rem;
   line-height: 1.55;
   text-align: left;
+  margin-bottom: 0.85rem;
 }
 
 .person-areas {
@@ -545,16 +546,35 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.person-area-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  background: var(--rmit-light);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--rmit-mid);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.person-area-tag:hover {
+  background: #fde8e9;
+  border-color: var(--rmit-red);
+  color: var(--rmit-red);
 }
 
 .person-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   list-style: none;
-  margin: auto 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -567,7 +587,7 @@ body {
   border-radius: 50%;
   background: var(--rmit-light);
   color: var(--rmit-mid);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   text-decoration: none;
   transition: background 0.15s ease, color 0.15s ease;
 }
