@@ -13,5 +13,40 @@
         </a>
       </p>
     </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        {% for item in site.data.nav %}
+        {% if item.url == "/" %}
+          {% assign is_active = page.url == "/" or page.url == "/index.html" %}
+        {% else %}
+          {% assign is_active = page.url | contains: item.url %}
+        {% endif %}
+        <li>
+          <a href="{{ item.url | relative_url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>
+            {{ item.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
   </div>
 </header>
+
+<script>
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var menu = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('is-open');
+      });
+    }
+  })();
+</script>
