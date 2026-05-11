@@ -448,7 +448,7 @@ body {
 
 /* ── People page ── */
 .people-group {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .people-group-heading {
@@ -459,95 +459,102 @@ body {
   color: var(--rmit-mid);
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--rmit-red);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
 .person-card {
   display: flex;
-  gap: 1.25rem;
-  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 1.5rem;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 12px;
   background: var(--rmit-white);
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .person-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
 }
 
 .person-avatar-wrap {
-  flex-shrink: 0;
+  margin-bottom: 1rem;
 }
 
 .person-avatar {
-  width: 72px;
-  height: 72px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
+  border: 3px solid var(--border);
 }
 
 .person-avatar-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--rmit-red);
   color: var(--rmit-white);
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
-.person-body {
-  flex: 1;
-  min-width: 0;
-}
-
 .person-name {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
 }
 
 .person-role {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--rmit-red);
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.15rem;
 }
 
 .person-dept {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--rmit-mid);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
 }
 
 .person-bio {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--rmit-mid);
-  margin-bottom: 0.6rem;
-  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  line-height: 1.55;
+  text-align: left;
 }
 
 .person-areas {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.3rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 1rem;
 }
 
 .person-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem;
   list-style: none;
-  margin: 0;
+  margin: auto 0 0;
   padding: 0;
 }
 
@@ -555,12 +562,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background: var(--rmit-light);
   color: var(--rmit-mid);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   text-decoration: none;
   transition: background 0.15s ease, color 0.15s ease;
 }
