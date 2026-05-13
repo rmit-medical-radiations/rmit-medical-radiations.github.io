@@ -10,13 +10,3 @@ end_year:                  # leave blank if ongoing
 description: >-
   Ventricular tachycardia is a life-threatening arrhythmia that is often challenging to treat safely. This project investigates a real-time tracking system for cardiac and respiratory motion during non-invasive stereotactic arrhythmia radioablation. The proposed technology aims to improve treatment precision, enabling more accurate radiation delivery, reducing complications, and ultimately improving patient outcomes.
 ---
-
-Write the full project description here in Markdown. This appears on the project's own page.
-
-## Background
-
-## Aims
-
-## Methods
-
-## Outcomes
