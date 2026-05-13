@@ -1,6 +1,6 @@
 groups:
 
-  - name: Principal Investigators
+  - name: Group Head
     members:
       - name: Ricky O'Brien
         role: Professor
@@ -10,10 +10,13 @@ groups:
           Ricky leads the Medical Radiations Research Group.
         email: ricky.obrien@rmit.edu.au
         orcid: 0000-0000-0000-0001
-        github: 
+        github:
         photo:
 
-  - name: Research Fellows
+  - name: Postdoctoral Researchers
+    members:
+
+  - name: Academic Staff
     members:
       - name: Daryl Wilding-McBride
         role: Research Fellow
@@ -44,36 +47,5 @@ groups:
         orcid: 0000-0000-0000-0003
         photo:
 
-  # - name: PhD Students
-  #   members:
-  #     - name: Alex Johnson
-  #       role: PhD Candidate
-  #       department: Medical Radiations, RMIT University
-  #       areas: [nuclear-medicine, radiotherapy]
-  #       bio: >-
-  #         Alex is investigating patient-specific dosimetry methods for
-  #         PSMA-targeted theranostics in metastatic prostate cancer.
-  #       email: alex.johnson@student.rmit.edu.au
-  #       photo:
-
-  #     - name: Sarah Lee
-  #       role: PhD Candidate
-  #       department: Medical Radiations, RMIT University
-  #       areas: [medical-imaging, nuclear-medicine]
-  #       bio: >-
-  #         Sarah's thesis examines attenuation correction strategies for
-  #         simultaneous PET/MR acquisitions.
-  #       email: sarah.lee@student.rmit.edu.au
-  #       github: sarahlee-mr
-  #       photo:
-
-  # - name: Alumni
-  #   members:
-  #     - name: James Watkins
-  #       role: "PhD — 2024"
-  #       department: Now at Austin Health, Melbourne
-  #       areas: [radiotherapy]
-  #       bio: >-
-  #         James completed his doctorate on multi-centre dosimetry audits for
-  #         external beam radiotherapy.
-  #       photo:
+  - name: PhD Students
+    members:
