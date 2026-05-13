@@ -1,10 +1,10 @@
 ---
 name: Babar Ali
 role: PhD Student
-group: Postdoctoral Researchers
+group: PhD Students
 department: Medical Radiations, RMIT University
 email: S4143990@student.rmit.edu.au
-orcid: 0000-0000-0000-0000
+orcid: 
 areas: [education]
 photo:
 focus: 
