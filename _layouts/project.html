@@ -8,6 +8,8 @@ layout: default
     <h1 class="page-title">{{ page.title }}</h1>
 
     <div class="project-meta">
+
+      {% if page.lead %}
       <p class="project-meta-people">
         {% assign lead_person = site.people | where: "name", page.lead | first %}
         <span class="project-card-label">Lead:</span>
@@ -30,6 +32,23 @@ layout: default
         {% endfor %}
         {% endif %}
       </p>
+      {% endif %}
+
+      <div class="project-meta-details">
+        {% if page.status %}
+        <span class="status-badge status-{{ page.status }}">{{ page.status }}</span>
+        {% endif %}
+
+        {% if page.start_year %}
+        <span class="project-meta-dates">
+          {{ page.start_year }}–{% if page.end_year %}{{ page.end_year }}{% else %}ongoing{% endif %}
+        </span>
+        {% endif %}
+
+        {% if page.funding %}
+        <span class="project-meta-funding">{{ page.funding }}</span>
+        {% endif %}
+      </div>
 
       {% if page.areas %}
       <div class="project-areas-header">
@@ -41,6 +60,7 @@ layout: default
         {% endfor %}
       </div>
       {% endif %}
+
     </div>
 
     {% if page.description %}
