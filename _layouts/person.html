@@ -18,25 +18,25 @@ layout: default
 
         <ul class="person-profile-links">
           {% if page.email %}
-          <li><a href="mailto:{{ page.email }}"><i class="fa-solid fa-envelope"></i> {{ page.email }}</a></li>
+          <li><a href="mailto:{{ page.email }}" title="{{ page.email }}"><i class="fa-solid fa-envelope"></i></a></li>
           {% endif %}
           {% if page.orcid and page.orcid != '' and page.orcid != '0000-0000-0000-0000' %}
-          <li><a href="https://orcid.org/{{ page.orcid }}" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> {{ page.orcid }}</a></li>
+          <li><a href="https://orcid.org/{{ page.orcid }}" target="_blank" rel="noopener" title="ORCID: {{ page.orcid }}"><i class="fa-brands fa-orcid"></i></a></li>
           {% endif %}
           {% if page.website %}
-          <li><a href="{{ page.website }}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Website</a></li>
+          <li><a href="{{ page.website }}" target="_blank" rel="noopener" title="Website"><i class="fa-solid fa-globe"></i></a></li>
           {% endif %}
           {% if page.github %}
-          <li><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> {{ page.github }}</a></li>
+          <li><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener" title="GitHub: {{ page.github }}"><i class="fa-brands fa-github"></i></a></li>
           {% endif %}
           {% if page.google_scholar %}
-          <li><a href="{{ page.google_scholar }}" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
+          <li><a href="{{ page.google_scholar }}" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a></li>
           {% endif %}
           {% if page.linkedin %}
-          <li><a href="https://linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
           {% endif %}
           {% if page.researchgate %}
-          <li><a href="https://www.researchgate.net/profile/{{ page.researchgate }}" target="_blank" rel="noopener"><i class="fa-brands fa-researchgate"></i> ResearchGate</a></li>
+          <li><a href="https://www.researchgate.net/profile/{{ page.researchgate }}" target="_blank" rel="noopener" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a></li>
           {% endif %}
         </ul>
 

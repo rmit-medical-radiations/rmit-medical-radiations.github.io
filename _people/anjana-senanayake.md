@@ -4,6 +4,7 @@ role: PhD Student
 group: PhD Students
 department: Medical Radiations, RMIT University
 email: S4043674@student.rmit.edu.au
+github:
 orcid: 0000-0002-3073-5812
 areas: [radiotherapy, medical-imaging]
 photo:

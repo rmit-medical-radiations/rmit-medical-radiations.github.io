@@ -72,13 +72,6 @@ layout: default
 
     </div>
 
-    {% if page.description %}
-    <div class="project-abstract">
-      <h2>Abstract</h2>
-      <p>{{ page.description }}</p>
-    </div>
-    {% endif %}
-
     {% if page.content and page.content != '' %}
     <div class="project-body">
       {{ content }}

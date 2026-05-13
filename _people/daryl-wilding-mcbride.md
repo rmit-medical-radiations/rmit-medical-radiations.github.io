@@ -4,6 +4,7 @@ role: Research Fellow
 group: Postdoctoral Researchers
 department: Medical Radiations, RMIT University
 email: daryl.wilding-mcbride@rmit.edu.au
+github: DarylWM
 orcid: 0000-0003-3796-1297
 areas: [radiotherapy, medical-imaging]
 photo:
