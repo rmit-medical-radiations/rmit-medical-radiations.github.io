@@ -17,15 +17,8 @@
     </h3>
     <p class="person-role">{{ person.role }}</p>
 
-    {% if person.areas %}
-    <div class="person-areas">
-      {% for slug in person.areas %}
-        {% assign area_data = site.data.areas | where: "slug", slug | first %}
-        {% if area_data %}
-        <a class="person-area-tag" href="{{ site.baseurl }}/{{ slug }}/">{{ area_data.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% if person.focus %}
+    <p class="person-focus">{{ person.focus }}</p>
     {% endif %}
 
     <ul class="person-links">
