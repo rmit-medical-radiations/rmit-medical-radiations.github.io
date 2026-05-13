@@ -914,6 +914,13 @@ a.pub-title:hover {
 .person-profile-dept {
   font-size: 0.9rem;
   color: var(--rmit-mid);
+  margin-bottom: 0.4rem;
+}
+
+.person-profile-focus {
+  font-size: 0.9rem;
+  color: var(--rmit-mid);
+  font-style: italic;
   margin-bottom: 1.5rem;
 }
 
