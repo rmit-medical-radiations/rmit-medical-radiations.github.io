@@ -7,7 +7,7 @@ email: daryl.wilding-mcbride@rmit.edu.au
 orcid: 0000-0003-3796-1297
 areas: [radiotherapy, medical-imaging]
 photo:
-focus: Deep learning, glioblastoma treatment response
+focus: Deep learning models, improving glioblastoma treatment, clinical utility
 interests:
     - Deep learning models for radiotherapy treatment planning
     - Monitoring and predicting response of glioblastoma to treatment
