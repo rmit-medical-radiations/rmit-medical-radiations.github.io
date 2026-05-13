@@ -7,17 +7,18 @@ title: People
   <div class="page-inner">
     <h1 class="page-title">People</h1>
 
-    {% for group in site.data.people.groups %}
-    {% if group.members and group.members.size > 0 %}
-    <div class="people-group">
-      <h2 class="people-group-heading">{{ group.name }}</h2>
-      <div class="people-grid">
-        {% for person in group.members %}
-        {% include person-card.html person=person %}
-        {% endfor %}
+    {% for group_name in site.data.people.group_order %}
+      {% assign group_members = site.people | where: "group", group_name %}
+      {% if group_members.size > 0 %}
+      <div class="people-group">
+        <h2 class="people-group-heading">{{ group_name }}</h2>
+        <div class="people-grid">
+          {% for person in group_members %}
+          {% include person-card.html person=person %}
+          {% endfor %}
+        </div>
       </div>
-    </div>
-    {% endif %}
+      {% endif %}
     {% endfor %}
 
   </div>

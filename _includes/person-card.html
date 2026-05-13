@@ -1,10 +1,5 @@
 {% assign person = include.person %}
-{% assign name_parts = person.name | split: ' ' %}
-{% assign initials = name_parts | first | slice: 0 | append: '' %}
-{% assign initials = initials | append: name_parts[-1] %}
-{% assign last = name_parts | last %}
-{% assign initials = name_parts | first | slice: 0 | append: last | slice: 0, 1 | prepend: '' %}
-{% capture initials %}{{ name_parts | first | slice: 0 }}{{ name_parts | last | slice: 0 }}{% endcapture %}
+{% capture initials %}{{ person.name | split: ' ' | first | slice: 0 }}{{ person.name | split: ' ' | last | slice: 0 }}{% endcapture %}
 
 <div class="person-card">
 
@@ -17,12 +12,10 @@
   </div>
 
   <div class="person-details">
-    <h3 class="person-name">{{ person.name }}</h3>
+    <h3 class="person-name">
+      <a href="{{ person.url | relative_url }}">{{ person.name }}</a>
+    </h3>
     <p class="person-role">{{ person.role }}</p>
-
-    {% if person.bio and person.bio != '' %}
-    <p class="person-bio">{{ person.bio }}</p>
-    {% endif %}
 
     {% if person.areas %}
     <div class="person-areas">
@@ -45,7 +38,7 @@
       {% if person.github %}
       <li><a href="https://github.com/{{ person.github }}" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a></li>
       {% endif %}
-      {% if person.orcid %}
+      {% if person.orcid and person.orcid != '' and person.orcid != '0000-0000-0000-0000' %}
       <li><a href="https://orcid.org/{{ person.orcid }}" target="_blank" rel="noopener" title="ORCID"><i class="fa-brands fa-orcid"></i></a></li>
       {% endif %}
       {% if person.google_scholar %}

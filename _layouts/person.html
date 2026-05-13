@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+{% capture initials %}{{ page.name | split: ' ' | first | slice: 0 }}{{ page.name | split: ' ' | last | slice: 0 }}{% endcapture %}
+
+<section class="page-content">
+  <div class="page-inner person-page">
+
+    <div class="person-profile">
+
+      <div class="person-profile-sidebar">
+        {% if page.photo %}
+        <img class="person-profile-photo" src="{{ page.photo | relative_url }}" alt="{{ page.name }}">
+        {% else %}
+        <div class="person-profile-placeholder">{{ initials }}</div>
+        {% endif %}
+
+        <ul class="person-profile-links">
+          {% if page.email %}
+          <li><a href="mailto:{{ page.email }}"><i class="fa-solid fa-envelope"></i> {{ page.email }}</a></li>
+          {% endif %}
+          {% if page.orcid and page.orcid != '' and page.orcid != '0000-0000-0000-0000' %}
+          <li><a href="https://orcid.org/{{ page.orcid }}" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> {{ page.orcid }}</a></li>
+          {% endif %}
+          {% if page.website %}
+          <li><a href="{{ page.website }}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Website</a></li>
+          {% endif %}
+          {% if page.github %}
+          <li><a href="https://github.com/{{ page.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> {{ page.github }}</a></li>
+          {% endif %}
+          {% if page.google_scholar %}
+          <li><a href="{{ page.google_scholar }}" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
+          {% endif %}
+          {% if page.linkedin %}
+          <li><a href="https://linkedin.com/in/{{ page.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          {% endif %}
+          {% if page.researchgate %}
+          <li><a href="https://www.researchgate.net/profile/{{ page.researchgate }}" target="_blank" rel="noopener"><i class="fa-brands fa-researchgate"></i> ResearchGate</a></li>
+          {% endif %}
+        </ul>
+
+        {% if page.areas %}
+        <div class="person-profile-areas">
+          {% for slug in page.areas %}
+          {% assign area_data = site.data.areas | where: "slug", slug | first %}
+          {% if area_data %}
+          <a class="person-area-tag" href="{{ site.baseurl }}/{{ slug }}/">{{ area_data.icon }} {{ area_data.title }}</a>
+          {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="person-profile-main">
+        <h1 class="person-profile-name">{{ page.name }}</h1>
+        <p class="person-profile-role">{{ page.role }}</p>
+        {% if page.department %}<p class="person-profile-dept">{{ page.department }}</p>{% endif %}
+
+        {% if page.content and page.content != '' %}
+        <div class="person-profile-bio">
+          <h2>Biography</h2>
+          {{ content }}
+        </div>
+        {% endif %}
+
+        {% if page.interests and page.interests != '' %}
+        <div class="person-profile-section">
+          <h2>Research Interests</h2>
+          <ul class="person-profile-list">
+            {% for item in page.interests %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if page.education and page.education != '' %}
+        <div class="person-profile-section">
+          <h2>Education</h2>
+          <ul class="person-profile-list">
+            {% for item in page.education %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <p class="back-link"><a href="{{ site.baseurl }}/people/">← All people</a></p>
+
+  </div>
+</section>

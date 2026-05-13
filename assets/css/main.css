@@ -609,6 +609,169 @@ body {
   border: 0;
 }
 
+/* ── Person profile page ── */
+.person-profile {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.person-profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.person-profile-photo,
+.person-profile-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.person-profile-photo {
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-profile-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rmit-red);
+  color: var(--rmit-white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.person-profile-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.person-profile-links li {
+  margin-bottom: 0.5rem;
+}
+
+.person-profile-links a {
+  font-size: 0.82rem;
+  color: var(--rmit-mid);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  word-break: break-all;
+}
+
+.person-profile-links a:hover {
+  color: var(--rmit-red);
+}
+
+.person-profile-links i {
+  width: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  color: var(--rmit-red);
+}
+
+.person-profile-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.person-profile-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  line-height: 1.2;
+}
+
+.person-profile-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--rmit-red);
+  margin-bottom: 0.1rem;
+}
+
+.person-profile-dept {
+  font-size: 0.9rem;
+  color: var(--rmit-mid);
+  margin-bottom: 1.5rem;
+}
+
+.person-profile-bio,
+.person-profile-section {
+  margin-top: 1.75rem;
+}
+
+.person-profile-bio h2,
+.person-profile-section h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--rmit-mid);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 0.85rem;
+}
+
+.person-profile-bio p {
+  font-size: 0.95rem;
+  color: var(--rmit-mid);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.person-profile-list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.person-profile-list li {
+  font-size: 0.9rem;
+  color: var(--rmit-mid);
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+/* person name link on cards */
+.person-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.person-name a:hover {
+  color: var(--rmit-red);
+}
+
+@media (max-width: 640px) {
+  .person-profile {
+    grid-template-columns: 1fr;
+  }
+  .person-profile-sidebar {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .person-profile-photo,
+  .person-profile-placeholder {
+    width: 90px;
+    height: 90px;
+    font-size: 1.75rem;
+    flex-shrink: 0;
+  }
+}
+
 /* ── Site nav (inside dark header) ── */
 .site-nav {
   margin-left: auto;
