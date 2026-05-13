@@ -89,6 +89,28 @@ layout: default
 
     </div>
 
+    {% assign person_projects = "" | split: "" %}
+    {% for project in site.projects %}
+      {% if project.lead == page.name or project.team contains page.name %}
+        {% assign person_projects = person_projects | push: project %}
+      {% endif %}
+    {% endfor %}
+
+    {% if person_projects.size > 0 %}
+    <div class="person-profile-section person-projects">
+      <h2>Research Projects</h2>
+      <ul class="person-project-list">
+        {% for project in person_projects %}
+        <li>
+          <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+          {% if project.status %}<span class="status-badge status-{{ project.status }}">{{ project.status }}</span>{% endif %}
+          {% if project.description %}<p>{{ project.description }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
     <p class="back-link"><a href="{{ site.baseurl }}/people/">← All people</a></p>
 
   </div>

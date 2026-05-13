@@ -1,0 +1,32 @@
+# Publications are listed flat and grouped by year on the page.
+#
+# Required fields:  authors, title, year
+# Optional fields:  journal, volume, issue, pages, doi, url, type, note
+#
+# type: journal | conference | book-chapter | preprint | thesis
+#
+# authors: use "AuthorA B, AuthorC D" format (lastname initials)
+# doi: just the identifier, e.g. 10.1000/xyz  (link is built automatically)
+
+- authors: "O'Brien R, Wilding-McBride D, Smith C"
+  title: "Example journal article title"
+  journal: "Medical Physics"
+  year: 2024
+  volume: 51
+  issue: 3
+  pages: "1234–1245"
+  doi: 10.1002/mp.00000
+  type: journal
+
+- authors: "Zhang X, Xiong W"
+  title: "Example conference paper title"
+  journal: "Proceedings of the AAPM Annual Meeting"
+  year: 2024
+  type: conference
+
+- authors: "Wilding-McBride D"
+  title: "Example preprint title"
+  journal: "arXiv"
+  year: 2025
+  url: https://arxiv.org/abs/0000.00000
+  type: preprint

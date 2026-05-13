@@ -2,9 +2,9 @@
 title: Project Title
 areas: [medical-imaging]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
 status: active             # active | completed
-lead: Dr Jane Smith        # primary investigator
-team:                      # other team members (optional)
-  - Collaborator Name
+lead: Ricky O'Brien        # must match name field in _people/ exactly
+team:                      # must match name fields in _people/ exactly
+  - Daryl Wilding-McBride
 funding: NHMRC             # funding body (optional)
 start_year: 2024
 end_year:                  # leave blank if ongoing

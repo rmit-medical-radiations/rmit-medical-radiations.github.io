@@ -1,0 +1,25 @@
+---
+layout: default
+title: Publications
+---
+
+<section class="page-content">
+  <div class="page-inner">
+    <h1 class="page-title">Publications</h1>
+
+    {% assign all_years = site.data.publications | map: "year" | uniq | sort | reverse %}
+
+    {% for year in all_years %}
+    {% assign year_pubs = site.data.publications | where: "year", year %}
+    <div class="pub-year-group">
+      <h2 class="pub-year-heading">{{ year }}</h2>
+      <ul class="pub-list">
+        {% for pub in year_pubs %}
+        {% include publication.html pub=pub %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>

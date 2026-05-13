@@ -284,16 +284,11 @@ body {
 }
 
 .project-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.5rem;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--border);
   border-left: 4px solid var(--rmit-red);
   border-radius: 6px;
-  text-decoration: none;
-  color: inherit;
+  background: var(--rmit-white);
   transition: box-shadow 0.2s ease, background 0.2s ease;
 }
 
@@ -302,32 +297,135 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-.project-card-main { flex: 1; }
-
-.project-card-main h4 {
+.project-card-title {
   font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
-.project-card-main p {
-  font-size: 0.9rem;
+.project-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card-title a:hover {
+  color: var(--rmit-red);
+}
+
+.project-card-people {
+  font-size: 0.85rem;
   color: var(--rmit-mid);
+  margin-bottom: 0.5rem;
+}
+
+.project-card-people a {
+  color: var(--rmit-mid);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card-people a:hover {
+  color: var(--rmit-red);
+}
+
+.project-card-label {
+  font-weight: 700;
+  color: var(--rmit-dark);
+}
+
+.project-card-abstract {
+  font-size: 0.88rem;
+  color: var(--rmit-mid);
+  line-height: 1.55;
   margin: 0;
 }
 
-.project-lead {
-  font-size: 0.85rem !important;
-  color: var(--rmit-mid);
-  margin-bottom: 0.35rem !important;
+/* project detail page */
+.project-meta {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.project-card-meta {
+.project-meta-people {
+  font-size: 0.95rem;
+  color: var(--rmit-mid);
+  margin-bottom: 0.75rem;
+}
+
+.project-meta-people a {
+  color: var(--rmit-mid);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-meta-people a:hover {
+  color: var(--rmit-red);
+}
+
+.project-abstract {
+  margin-bottom: 1.75rem;
+}
+
+.project-abstract h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--rmit-mid);
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 0.75rem;
+}
+
+.project-abstract p {
+  font-size: 0.95rem;
+  color: var(--rmit-mid);
+  line-height: 1.7;
+}
+
+.project-body h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.project-body p {
+  font-size: 0.95rem;
+  color: var(--rmit-mid);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+/* person → projects */
+.person-project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
-  flex-shrink: 0;
+  gap: 0.6rem;
+}
+
+.person-project-list li {
+  font-size: 0.9rem;
+}
+
+.person-project-list a {
+  font-weight: 600;
+  color: var(--rmit-dark);
+  text-decoration: none;
+}
+
+.person-project-list a:hover {
+  color: var(--rmit-red);
+}
+
+.person-project-list p {
+  font-size: 0.85rem;
+  color: var(--rmit-mid);
+  margin: 0.2rem 0 0;
+  line-height: 1.5;
 }
 
 /* ── Status badge ── */
@@ -615,6 +713,88 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ── Publications page ── */
+.pub-year-group {
+  margin-bottom: 2.5rem;
+}
+
+.pub-year-heading {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--rmit-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid var(--rmit-red);
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pub-item {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 3px solid var(--border);
+}
+
+.pub-item:hover {
+  border-left-color: var(--rmit-red);
+}
+
+.pub-authors {
+  color: var(--rmit-mid);
+}
+
+.pub-title {
+  font-weight: 600;
+  color: var(--rmit-dark);
+  text-decoration: none;
+}
+
+a.pub-title:hover {
+  color: var(--rmit-red);
+}
+
+.pub-venue {
+  font-style: italic;
+  color: var(--rmit-mid);
+}
+
+.pub-detail {
+  color: var(--rmit-mid);
+}
+
+.pub-doi {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--rmit-white);
+  background: var(--rmit-mid);
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.pub-doi:hover {
+  background: var(--rmit-red);
+}
+
+.pub-note {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--rmit-red);
+  font-weight: 600;
+  margin-top: 0.2rem;
 }
 
 /* ── Person profile page ── */
