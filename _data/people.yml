@@ -111,6 +111,15 @@ groups:
         orcid: 
         photo:
 
+      - name: Supaporn Srisuwan
+        role: PhD Student
+        department: Medical Radiations, RMIT University
+        areas: [radiotherapy, medical-imaging]
+        bio: 
+        email: S4041218@student.rmit.edu.au
+        orcid: 
+        photo:
+
       - name: Anjana Senanayake
         role: PhD Student
         department: Medical Radiations, RMIT University
