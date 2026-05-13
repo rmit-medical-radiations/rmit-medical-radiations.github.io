@@ -56,7 +56,7 @@ layout: default
         <h1 class="person-profile-name">{{ page.name }}</h1>
         <p class="person-profile-role">{{ page.role }}</p>
         {% if page.department %}<p class="person-profile-dept">{{ page.department }}</p>{% endif %}
-        {% if page.focus and page.focus != '' %}<p class="person-profile-focus">{{ page.focus }}</p>{% endif %}
+        {% if page.focus and page.focus != '' %}<p class="person-profile-focus"><span class="person-profile-label">Focus:</span> {{ page.focus }}</p>{% endif %}
 
         {% if page.bio and page.bio != '' %}
         <div class="person-profile-section">

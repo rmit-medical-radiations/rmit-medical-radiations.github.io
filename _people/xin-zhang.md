@@ -8,7 +8,7 @@ orcid: 0000-0002-8395-0479
 areas: [medical-imaging]
 photo:
 bio:
-focus: 
+focus: Sparse-view image reconstruction; data-driven dynamic image reconstruction; deep learning models; feedforward image reconstruction
 interests:
 education:
 ---

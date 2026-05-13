@@ -8,7 +8,7 @@ orcid: 0000-0003-3219-9846
 areas: [medical-imaging]
 photo:
 bio:
-focus: 
-interests: Machine learning, deep learning, signal processing, and medical image processing, with applications in cardiac and neural systems
+focus: Machine learning, deep learning, signal processing, and medical image processing, with applications in cardiac and neural systems
+interests: 
 education:
 ---

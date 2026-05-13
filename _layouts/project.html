@@ -50,6 +50,15 @@ layout: default
         {% endif %}
       </div>
 
+      {% if page.collaborators and page.collaborators.size > 0 %}
+      <p class="project-meta-collaborators">
+        <span class="project-card-label">External collaborators:</span>
+        {% for collab in page.collaborators %}
+        {{ collab.name }}{% if collab.institution %}, <em>{{ collab.institution }}</em>{% endif %}{% unless forloop.last %};  {% endunless %}
+        {% endfor %}
+      </p>
+      {% endif %}
+
       {% if page.areas %}
       <div class="project-areas-header">
         {% for slug in page.areas %}
