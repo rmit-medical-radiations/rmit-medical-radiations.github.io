@@ -7,6 +7,7 @@ email: ricky.obrien@rmit.edu.au
 orcid: 0000-0002-6586-7356
 areas: [medical-imaging, radiotherapy]
 photo:
+bio:
 focus: 
 interests:
 education:

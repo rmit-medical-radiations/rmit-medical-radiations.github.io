@@ -7,6 +7,7 @@ email: xin.zhang2@rmit.edu.au
 orcid: 0000-0002-8395-0479
 areas: [medical-imaging]
 photo:
+bio:
 focus: 
 interests:
 education:

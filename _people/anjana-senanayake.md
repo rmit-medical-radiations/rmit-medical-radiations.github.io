@@ -7,6 +7,7 @@ email: S4043674@student.rmit.edu.au
 orcid:
 areas: [radiotherapy, medical-imaging]
 photo:
+bio:
 focus: 
 interests:
 education:

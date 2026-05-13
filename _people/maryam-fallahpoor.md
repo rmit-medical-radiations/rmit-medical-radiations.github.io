@@ -7,6 +7,7 @@ email: maryam.fallahpoor@yahoo.com
 orcid: 
 areas: [medical-imaging]
 photo:
+bio:
 focus: 
 interests:
 education:

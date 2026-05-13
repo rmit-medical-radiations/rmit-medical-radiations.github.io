@@ -57,10 +57,10 @@ layout: default
         <p class="person-profile-role">{{ page.role }}</p>
         {% if page.department %}<p class="person-profile-dept">{{ page.department }}</p>{% endif %}
 
-        {% if page.content and page.content != '' %}
-        <div class="person-profile-bio">
+        {% if page.bio and page.bio != '' %}
+        <div class="person-profile-section">
           <h2>Biography</h2>
-          {{ content }}
+          <p>{{ page.bio }}</p>
         </div>
         {% endif %}
 

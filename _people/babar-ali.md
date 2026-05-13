@@ -7,6 +7,7 @@ email: S4143990@student.rmit.edu.au
 orcid: 
 areas: [education]
 photo:
+bio:
 focus: 
 interests:
 education:
