@@ -2,7 +2,7 @@
 title: Ventricular tachycardia
 areas: [medical-imaging, radiotherapy]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
 status: active             # active | completed
-lead: Wendy Xiong        # must match name field in _people/ exactly
+lead: Wenjuan (Wendy) Xiong        # must match name field in _people/ exactly
 team:                      # must match name fields in _people/ exactly
 funding: NHMRC             # funding body (optional)
 start_year: 2023
