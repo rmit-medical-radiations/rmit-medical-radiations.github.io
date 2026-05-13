@@ -575,8 +575,6 @@ body {
 .people-group-heading {
   font-size: 1.1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--rmit-mid);
   padding-bottom: 0.5rem;
   border-bottom: 3px solid var(--rmit-red);
