@@ -7,7 +7,7 @@ email: S4043674@student.rmit.edu.au
 github:
 orcid: 0000-0002-3073-5812
 areas: [radiotherapy, medical-imaging]
-photo:
+photo: /assets/images/people/anjana.jpg
 bio:
 focus: Computer vision in medical imaging, Bioinformatics, Deep learning & AI
 interests:

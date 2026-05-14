@@ -7,7 +7,7 @@ email: daryl.wilding-mcbride@rmit.edu.au
 github: DarylWM
 orcid: 0000-0003-3796-1297
 areas: [radiotherapy, medical-imaging]
-photo:
+photo: /assets/images/people/daryl-wilding-mcbride.jpg
 bio:
 focus: Deep learning models, improving glioblastoma treatment, clinical utility
 interests:
