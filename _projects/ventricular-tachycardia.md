@@ -1,9 +1,11 @@
 ---
 title: Real-time tracking system for cardiac and respiratory motion during non-invasive stereotactic arrhythmia radioablation
 areas: [medical-imaging, radiotherapy]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
+type:                     # phd (optional)
 status: active             # active | completed
 lead: Wenjuan (Wendy) Xiong        # must match name field in _people/ exactly
 collaborators:             # external collaborators (optional)
+supervisors:               # must match name fields in _people/ exactly (PhD projects)
 team:                      # must match name fields in _people/ exactly
 funding: NHMRC             # funding body (optional)
 start_year: 2023

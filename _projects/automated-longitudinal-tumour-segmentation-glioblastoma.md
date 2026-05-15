@@ -1,11 +1,13 @@
 ---
 title: Automated Longitudinal Segmentation of Glioblastoma on the MR-Linac
 areas: [medical-imaging, radiotherapy]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
+type:                     # phd (optional)
 status: active             # active | completed
 lead: Daryl Wilding-McBride        # must match name field in _people/ exactly
 collaborators:             # external collaborators (optional)
   - name: A/Prof Sweet Ping Ng
     institution: Department of Radiation Oncology, Austin Health
+supervisors:               # must match name fields in _people/ exactly (PhD projects)
 team:                      # must match name fields in _people/ exactly
 funding: NHMRC             # funding body (optional)
 start_year: 2024

@@ -238,6 +238,7 @@ body {
 .page-title {
   font-size: 2rem;
   font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 4px solid var(--rmit-red);
@@ -315,6 +316,10 @@ body {
 .project-card-people {
   font-size: 0.85rem;
   color: var(--rmit-mid);
+  margin-bottom: 0.2rem;
+}
+
+.project-card-people:last-of-type {
   margin-bottom: 0.5rem;
 }
 
@@ -419,6 +424,11 @@ body {
   margin: 1.5rem 0 0.5rem;
 }
 
+.project-body h2:has(+ h2),
+.project-body h2:last-child {
+  display: none;
+}
+
 .project-body p {
   font-size: 0.95rem;
   color: var(--rmit-mid);
@@ -490,6 +500,20 @@ body {
 .status-completed {
   background: #f1f5f9;
   color: #475569;
+}
+
+.type-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.type-phd {
+  background: #ede9fe;
+  color: #5b21b6;
 }
 
 /* ── Area tags ── */

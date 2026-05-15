@@ -34,7 +34,25 @@ layout: default
       </p>
       {% endif %}
 
+      {% if page.supervisors and page.supervisors.size > 0 %}
+      <p class="project-meta-people">
+        <span class="project-card-label">{% if page.supervisors.size == 1 %}Supervisor{% else %}Supervisors{% endif %}:</span>
+        {% for supervisor in page.supervisors %}
+        {% assign supervisor_person = site.people | where: "name", supervisor | first %}
+        {% if supervisor_person %}
+        <a href="{{ supervisor_person.url | relative_url }}">{{ supervisor }}</a>
+        {% else %}
+        {{ supervisor }}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+      {% endif %}
+
       <div class="project-meta-details">
+        {% if page.type %}
+        <span class="type-badge type-{{ page.type }}">{% if page.type == 'phd' %}PhD{% else %}{{ page.type }}{% endif %}</span>
+        {% endif %}
         {% if page.status %}
         <span class="status-badge status-{{ page.status }}">{{ page.status }}</span>
         {% endif %}

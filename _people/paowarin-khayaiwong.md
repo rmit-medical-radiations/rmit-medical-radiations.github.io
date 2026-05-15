@@ -5,11 +5,11 @@ group: PhD Students
 department: Medical Radiations, RMIT University
 email: S4215177@student.rmit.edu.au
 github:
-orcid:
+orcid: 0000-0001-6147-6166
 areas: [radiotherapy, medical-imaging]
-photo:
+photo: /assets/images/people/paowarin.jpg
 bio:
-focus: 
-interests:
+focus: Glioblastoma (GBM) radiotherapy, MRI-Linac–guided adaptive radiotherapy, and Imaging biomarkers
+interests: 
 education:
 ---

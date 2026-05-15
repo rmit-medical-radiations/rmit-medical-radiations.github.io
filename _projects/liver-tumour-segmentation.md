@@ -1,9 +1,11 @@
 ---
 title: Liver tumour segmentation from MR-Linac
 areas: [medical-imaging, radiotherapy]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
+type:                     # phd (optional)
 status: active             # active | completed
 lead: Maryam Fallahpoor        # must match name field in _people/ exactly
 collaborators:             # external collaborators (optional)
+supervisors:               # must match name fields in _people/ exactly (PhD projects)
 team:                      # must match name fields in _people/ exactly
 funding: NHMRC             # funding body (optional)
 start_year: 2026

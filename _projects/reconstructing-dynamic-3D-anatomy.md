@@ -1,9 +1,11 @@
 ---
 title: Reconstructing dynamic 3D anatomy from sparse X-ray projections
 areas: [medical-imaging, radiotherapy]   # one or more: medical-imaging, nuclear-medicine, radiotherapy, education
+type:                     # phd (optional)
 status: active             # active | completed
 lead: Xin Zhang        # must match name field in _people/ exactly
 collaborators:             # external collaborators (optional)
+supervisors:               # must match name fields in _people/ exactly (PhD projects)
 team:                      # must match name fields in _people/ exactly
 funding: NHMRC             # funding body (optional)
 start_year: 2023

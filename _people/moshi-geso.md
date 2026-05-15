@@ -1,5 +1,5 @@
 ---
-name: Moshi Gesho
+name: Moshi Geso
 role: Associate Professor
 group: Academic Staff
 department: Medical Radiations, RMIT University
